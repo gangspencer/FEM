@@ -10,4 +10,4 @@ Current method of encryption:
   -Text file is read char by char adding key to each char and changing its ASCII value.
   -Char is written to final file
   
-Latest Update: v1.1 6.16.16
+Latest Update: v2.0 6.17.16
