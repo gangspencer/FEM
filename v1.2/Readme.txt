@@ -5,5 +5,5 @@ Differences from v1.1
 	-Bug fixes
 	-Better file placement/naming scheme.
 
-Desired Features for v1.3
+Desired Features for v2.0
 	-Begin work on GUI
