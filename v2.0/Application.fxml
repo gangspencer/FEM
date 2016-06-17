@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.spencergang.fem.Controller">
+   <children>
+      <Label layoutX="149.0" layoutY="14.0" text="FEM v2.0">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="path" layoutX="89.0" layoutY="90.0" prefHeight="25.0" prefWidth="287.0" />
+      <TextField fx:id="destination" layoutX="89.0" layoutY="140.0" prefHeight="25.0" prefWidth="287.0" />
+      <TextField fx:id="key" layoutX="89.0" layoutY="185.0" prefHeight="25.0" prefWidth="61.0" />
+      <Label layoutX="33.0" layoutY="94.0" text="File Path" />
+      <Label layoutX="25.0" layoutY="144.0" text="Destination" />
+      <Label layoutX="46.0" layoutY="189.0" text="Key" />
+      <CheckBox fx:id="encryption" layoutX="165.0" layoutY="189.0" mnemonicParsing="false" text="Encryption" />
+      <CheckBox fx:id="decryption" layoutX="252.0" layoutY="189.0" mnemonicParsing="false" text="Decryption" />
+      <Button fx:id="begin" layoutX="179.0" layoutY="247.0" mnemonicParsing="false" onAction="#handleBegin" text="BEGIN" />
+   </children>
+</AnchorPane>
