@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.spencergang.fem.HelpController">
+   <children>
+      <Label layoutX="212.0" layoutY="14.0" text="FEM HELP v2.3">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="49.0" text="What is FEM?">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="69.0" prefHeight="17.0" prefWidth="431.0" text="FEM (File Encryption Module) is a lightweight java program designed to encrypt" />
+      <Label layoutX="14.0" layoutY="86.0" text="or decrypt files using AES Encryption." />
+      <Label layoutX="14.0" layoutY="118.0" text="What are the &quot;Encoding File&quot; and the &quot;IV File&quot;?">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="138.0" text="The Encoding File and the IV File are both generated randomly by FEM upon execution " />
+      <Label layoutX="14.0" layoutY="155.0" text="of encryption. The Encoding File is a simple file to help your password encrypt/decrypt" />
+      <Label layoutX="14.0" layoutY="172.0" text="files. The IV (Initialization Vector) file is a file which makes AES encryption even " />
+      <Label layoutX="14.0" layoutY="187.0" text="more secure." />
+      <Label layoutX="82.0" layoutY="204.0" text="Encryption:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="113.0" layoutY="221.0" text="For encryption you must simply name your Encoding File and IV File, FEM will " />
+      <Label layoutX="113.0" layoutY="238.0" text="take care of the rest. The files will be generated in the same directory as " />
+      <Label layoutX="113.0" layoutY="255.0" text="your input file and destination file." />
+      <Label layoutX="82.0" layoutY="272.0" text="Decryption:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="112.0" layoutY="289.0" text="For decryption you must simply browse to find the Encoding and IV files you " />
+      <Label layoutX="112.0" layoutY="306.0" text="created upon encryption. FEM will take care of the rest and generate your " />
+      <Label layoutX="112.0" layoutY="323.0" text="decrypted file in the same directory as your input file." />
+      <Label layoutX="14.0" layoutY="367.0" text="What is the Encryption/Decryption Key?">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="387.0" text="&quot;Key&quot; is a simple term for password. You MUST use the same key for both encryption " />
+      <Label layoutX="14.0" layoutY="404.0" text="and decryption." />
+      <Label layoutX="14.0" layoutY="460.0" text="Last Edit: 6/23/16" />
+      <Button fx:id="okay" layoutX="444.0" layoutY="456.0" mnemonicParsing="false" onAction="#handleOkay" text="Continue" />
+   </children>
+</AnchorPane>
