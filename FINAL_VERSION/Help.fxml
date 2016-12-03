@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="405.0" prefWidth="520.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.spencergang.fem.HelpController">
+   <children>
+      <Label layoutX="212.0" layoutY="14.0" text="FEM HELP v2.3">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="49.0" text="What is FEM?">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="69.0" prefHeight="17.0" prefWidth="431.0" text="FEM (File Encryption Module) is a lightweight java program designed to encrypt" />
+      <Label layoutX="14.0" layoutY="86.0" text="or decrypt files using AES Encryption." />
+      <Label layoutX="82.0" layoutY="112.0" text="Encryption:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="81.0" layoutY="183.0" text="Decryption:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="275.0" text="What is the Encryption/Decryption Key?">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="295.0" text="&quot;Key&quot; is a simple term for password. You MUST use the same key for both encryption " />
+      <Label layoutX="17.0" layoutY="312.0" text="and decryption." />
+      <Label layoutX="14.0" layoutY="368.0" text="Last Edit: 9/8/16" />
+      <Button fx:id="okay" layoutX="444.0" layoutY="364.0" mnemonicParsing="false" onAction="#handleOkay" text="Continue" />
+      <Label layoutX="107.0" layoutY="132.0" text="FEM makes encrypting files extremely easy, simply select &quot;Browse&quot;" />
+      <Label layoutX="107.0" layoutY="149.0" text="and select which file you would like to encrypt, provide a password" />
+      <Label layoutX="107.0" layoutY="166.0" text="and destination file name and FEM will take care of the rest." />
+   </children>
+</AnchorPane>

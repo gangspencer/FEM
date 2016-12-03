@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="280.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.spencergang.fem.Controller">
+   <children>
+      <TabPane prefHeight="280.0" prefWidth="450.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Encryption">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="148.0" layoutY="14.0" text="File Encryption">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="36.0" layoutY="78.0" text="File" />
+                        <Button fx:id="fileBrowseEncryption" layoutX="70.0" layoutY="74.0" mnemonicParsing="false" onAction="#handleFileBrowseEncryption" text="Browse" />
+                        <Label layoutX="14.0" layoutY="123.0" text="Destination File Name" />
+                        <Label layoutX="31.0" layoutY="168.0" text="Encryption Key" />
+                        <TextField fx:id="filePathEncryption" layoutX="152.0" layoutY="74.0" prefHeight="25.0" prefWidth="285.0" />
+                        <TextField fx:id="destinationPathEncryption" layoutX="152.0" layoutY="119.0" prefHeight="25.0" prefWidth="283.0" />
+                        <TextField fx:id="encryptionKey" layoutX="152.0" layoutY="164.0" prefHeight="25.0" prefWidth="285.0" />
+                        <Button fx:id="beginEncryption" layoutX="230.0" layoutY="200.0" mnemonicParsing="false" onAction="#handleBeginEncryption" text="Begin" />
+                        <Button fx:id="helpEncryption" layoutX="180.0" layoutY="200.0" mnemonicParsing="false" onAction="#handleHelpButton" text="Help" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Decryption">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="146.0" layoutY="14.0" text="File Decryption">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="filePathDecryption" layoutX="152.0" layoutY="74.0" prefHeight="25.0" prefWidth="285.0" />
+                        <Button fx:id="fileBrowseDecryption" layoutX="70.0" layoutY="74.0" mnemonicParsing="false" onAction="#handleFileBrowseDecryption" text="Browse" />
+                        <Label layoutX="36.0" layoutY="78.0" text="File" />
+                        <TextField fx:id="destinationPathDecryption" layoutX="152.0" layoutY="119.0" prefHeight="25.0" prefWidth="285.0" />
+                        <TextField fx:id="decryptionKey" layoutX="152.0" layoutY="164.0" prefHeight="25.0" prefWidth="285.0" />
+                        <Label layoutX="14.0" layoutY="123.0" text="Destination File Name" />
+                        <Label layoutX="31.0" layoutY="168.0" text="Decryption Key" />
+                        <Button fx:id="beginDecryption" layoutX="230.0" layoutY="200.0" mnemonicParsing="false" onAction="#handleBeginDecryption" text="Begin" />
+                        <Button fx:id="helpDecryption" layoutX="180.0" layoutY="200.0" mnemonicParsing="false" onAction="#handleHelpButton" text="Help" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
